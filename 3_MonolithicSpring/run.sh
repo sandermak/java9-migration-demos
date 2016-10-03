@@ -11,6 +11,6 @@ jar --create --file mods/bookapp@1.0.jar --module-version=1.0 -C out/bookapp .
 
 java -cp $CLASSPATH \
      --module-path mods       \
-     --add-modules java.xml.bind \
+     --add-modules java.xml.bind,java.sql \
      --add-exports-private java.base/java.lang=ALL-UNNAMED \
      -m bookapp/main.Main
